@@ -5,7 +5,7 @@ This data consists of 2,381 UCE loci from 38 taxa. It was used to resolve the pl
 ## Data Stage and QC Plan
 - **Current Stage:** Assembled and aligned UCEs
 - **QC Tool:** **Phyluce**
-- **Plan:** I will use 'phyluce' to check alignment lengths and taxon completedness since the raw reads have already been processed into alignements by the original authors 
+- **Plan:** I will use Biopython to check basic alignment lengths and taxon completeness. Raw reads have already been processed into alignments by the original authors. 
 
 ## Log
 ### 02-17-2026
