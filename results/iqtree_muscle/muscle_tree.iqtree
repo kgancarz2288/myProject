@@ -1,0 +1,283 @@
+IQ-TREE 3.1.1 built Apr  8 2026
+
+Input file name: /home/kg22/myProject/data/muscle_concatenated.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 250135
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 38 sequences with 151681 nucleotide sites
+Number of constant sites: 106673 (= 70.3272% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 106673 (= 70.3272% of all sites)
+Number of parsimony informative sites: 20970
+Number of distinct site patterns: 46633
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 0.9832
+  A-G: 3.0467
+  A-T: 0.6464
+  C-G: 1.2557
+  C-T: 2.8792
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3135
+  pi(C) = 0.1903
+  pi(G) = 0.1807
+  pi(T) = 0.3155
+
+Rate matrix Q:
+
+  A   -0.8285    0.1646    0.4844    0.1794
+  C    0.2712     -1.27    0.1997    0.7992
+  G    0.8405    0.2103    -1.328    0.2776
+  T    0.1783    0.4821     0.159   -0.8194
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.3282
+
+ Category  Relative_rate  Proportion
+  1         0.00786        0.25
+  2         0.1265         0.25
+  3         0.6403         0.25
+  4         3.225          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -634744.0475 (s.e. 1814.8327)
+Unconstrained log-likelihood (without tree): -1173228.3989
+Number of free parameters (#branches + #model parameters): 82
+Akaike information criterion (AIC) score: 1269652.0950
+Corrected Akaike information criterion (AICc) score: 1269652.1847
+Bayesian information criterion (BIC) score: 1270466.3168
+
+Total tree length (sum of branch lengths): 0.8152
+Sum of internal branch lengths: 0.2271 (27.8567% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Gopherus_berlandieri' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Gopherus_berlandieri
+|
+|                                            +---------------Anolis_carolinensis
+|                        +-------------------| (100)
+|                        |                   +-------------------------Python_molurus
+|                     +--| (100)
+|                     |  +-------Sphenodon_punctatus
+|                  +--| (100)
+|                  |  +--------------------------------Homo_sapiens19
+|              +---| (100)
+|              |   |  +-------------Gallus_gallus
+|              |   +--| (100)
+|              |      +------Crocodylus_porosus
+|           +--| (100)
+|           |  |        +---Podocnemis_erythracephala
+|           |  |     +--| (100)
+|           |  |     |  +---Erymnochelys_madagascariensis
+|           |  |  +--| (100)
+|           |  |  |  |  +--Pelomedusa_subrufa1
+|           |  |  |  +--| (100)
+|           |  |  |     +--Pelusios_castaneus
+|           |  +--| (100)
+|           |     |  +--Phrynops_sp
+|           |     +--| (100)
+|           |        +--Platemys_platycephala
+|        +--| (100)
+|        |  |  +---------Carettochelys_insculpta
+|        |  +--| (100)
+|        |     |   +-----Lissemys_punctata
+|        |     +---| (100)
+|        |         |     +--Nilssonia_formosa
+|        |         |  +--| (100)
+|        |         |  |  +--Pelodiscus_sinensis
+|        |         +--| (100)
+|        |            +--Apalone_ferox
+|     +--| (100)
+|     |  |        +--Dermatemys_sp
+|     |  |     +--| (100)
+|     |  |     |  |  +--Staurotypus_triporcatus
+|     |  |     |  +--| (100)
+|     |  |     |     |  +--Sternotherus_minor
+|     |  |     |     +--| (100)
+|     |  |     |        +--Kinosternon_flavescens
+|     |  |  +--| (100)
+|     |  |  |  +--Chelydra_sp
+|     |  +--| (100)
+|     |     |     +--Chelonia_mydas
+|     |     |  +--| (100)
+|     |     |  |  +--Lepidochelys_olivacea
+|     |     +--| (100)
+|     |        +--Dermochelys_coriacea
+|  +--| (100)
+|  |  |              +--Graptemys_pseudogeographica
+|  |  |           +--| (100)
+|  |  |           |  +--Trachemys_scripta
+|  |  |        +--| (100)
+|  |  |        |  +--Chrysemys_picta
+|  |  |     +--| (100)
+|  |  |     |  +--Deirochelys_reticularia
+|  |  |  +--| (100)
+|  |  |  |  |  +--Clemmys_marmorata
+|  |  |  |  +--| (100)
+|  |  |  |     +--Terrapene_ornata
+|  |  +--| (100)
+|  |     +--Platysternon_megacephalum
++--| (100)
+|  |     +--Cyclemys_dentata
+|  |  +--| (100)
+|  |  |  +--Geoemyda_spengleri
+|  +--| (100)
+|     +--Rhinoclemmys_punctularia
+|
+|  +--Testudo_horsfieldii
++--| (100)
+   +--Geochelone_pardalis
+
+Tree in newick format:
+
+(Gopherus_berlandieri:0.0071920252,(((((((((Anolis_carolinensis:0.0579316361,Python_molurus:0.0920246126)100:0.0709303075,Sphenodon_punctatus:0.0282147813)100:0.0077144840,Homo_sapiens19:0.1149997461)100:0.0039731415,(Gallus_gallus:0.0494432726,Crocodylus_porosus:0.0269825363)100:0.0054013068)100:0.0159680687,(((Podocnemis_erythracephala:0.0146831989,Erymnochelys_madagascariensis:0.0171803924)100:0.0078142015,(Pelomedusa_subrufa1:0.0043034590,Pelusios_castaneus:0.0042490857)100:0.0136540699)100:0.0067289011,(Phrynops_sp:0.0040668299,Platemys_platycephala:0.0048523523)100:0.0122120631)100:0.0072762529)100:0.0034784132,(Carettochelys_insculpta:0.0347829553,(Lissemys_punctata:0.0239299061,((Nilssonia_formosa:0.0038158358,Pelodiscus_sinensis:0.0040827579)100:0.0016712236,Apalone_ferox:0.0054770250)100:0.0036656173)100:0.0153898147)100:0.0063926754)100:0.0043494476,(((Dermatemys_sp:0.0112326249,(Staurotypus_triporcatus:0.0076533604,(Sternotherus_minor:0.0019236193,Kinosternon_flavescens:0.0026593675)100:0.0029689657)100:0.0046274912)100:0.0050562266,Chelydra_sp:0.0076228347)100:0.0006869280,((Chelonia_mydas:0.0022366231,Lepidochelys_olivacea:0.0044224845)100:0.0027116880,Dermochelys_coriacea:0.0103287411)100:0.0057899060)100:0.0004624117)100:0.0024214550,(((((Graptemys_pseudogeographica:0.0013913584,Trachemys_scripta:0.0008319832)100:0.0004086102,Chrysemys_picta:0.0013458384)100:0.0003694178,Deirochelys_reticularia:0.0023533254)100:0.0019383427,(Clemmys_marmorata:0.0016488008,Terrapene_ornata:0.0022138027)100:0.0008903037)100:0.0017887715,Platysternon_megacephalum:0.0038630571)100:0.0003349181)100:0.0034448274,((Cyclemys_dentata:0.0037479152,Geoemyda_spengleri:0.0038217503)100:0.0003563813,Rhinoclemmys_punctularia:0.0076025957)100:0.0012874833)100:0.0029120727,(Testudo_horsfieldii:0.0054921328,Geochelone_pardalis:0.0074963755)100:0.0020069711);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -634744.04743017
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.00000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Gopherus_berlandieri
+|
+|                                            +---------------Anolis_carolinensis
+|                        +-------------------| (100)
+|                        |                   +-------------------------Python_molurus
+|                     +--| (100)
+|                     |  +-------Sphenodon_punctatus
+|                  +--| (100)
+|                  |  +--------------------------------Homo_sapiens19
+|              +---| (100)
+|              |   |  +-------------Gallus_gallus
+|              |   +--| (100)
+|              |      +------Crocodylus_porosus
+|           +--| (100)
+|           |  |        +---Podocnemis_erythracephala
+|           |  |     +--| (100)
+|           |  |     |  +---Erymnochelys_madagascariensis
+|           |  |  +--| (100)
+|           |  |  |  |  +--Pelomedusa_subrufa1
+|           |  |  |  +--| (100)
+|           |  |  |     +--Pelusios_castaneus
+|           |  +--| (100)
+|           |     |  +--Phrynops_sp
+|           |     +--| (100)
+|           |        +--Platemys_platycephala
+|        +--| (100)
+|        |  |  +---------Carettochelys_insculpta
+|        |  +--| (100)
+|        |     |   +-----Lissemys_punctata
+|        |     +---| (100)
+|        |         |     +--Nilssonia_formosa
+|        |         |  +--| (100)
+|        |         |  |  +--Pelodiscus_sinensis
+|        |         +--| (100)
+|        |            +--Apalone_ferox
+|     +--| (100)
+|     |  |        +--Dermatemys_sp
+|     |  |     +--| (100)
+|     |  |     |  |  +--Staurotypus_triporcatus
+|     |  |     |  +--| (100)
+|     |  |     |     |  +--Sternotherus_minor
+|     |  |     |     +--| (100)
+|     |  |     |        +--Kinosternon_flavescens
+|     |  |  +--| (100)
+|     |  |  |  +--Chelydra_sp
+|     |  +--| (100)
+|     |     |     +--Chelonia_mydas
+|     |     |  +--| (100)
+|     |     |  |  +--Lepidochelys_olivacea
+|     |     +--| (100)
+|     |        +--Dermochelys_coriacea
+|  +--| (100)
+|  |  |              +--Graptemys_pseudogeographica
+|  |  |           +--| (100)
+|  |  |           |  +--Trachemys_scripta
+|  |  |        +--| (100)
+|  |  |        |  +--Chrysemys_picta
+|  |  |     +--| (100)
+|  |  |     |  +--Deirochelys_reticularia
+|  |  |  +--| (100)
+|  |  |  |  |  +--Clemmys_marmorata
+|  |  |  |  +--| (100)
+|  |  |  |     +--Terrapene_ornata
+|  |  +--| (100)
+|  |     +--Platysternon_megacephalum
++--| (100)
+|  |     +--Cyclemys_dentata
+|  |  +--| (100)
+|  |  |  +--Geoemyda_spengleri
+|  +--| (100)
+|     +--Rhinoclemmys_punctularia
+|
+|  +--Testudo_horsfieldii
++--| (100)
+   +--Geochelone_pardalis
+
+
+Consensus tree in newick format: 
+
+(Gopherus_berlandieri:0.0071923431,(((((((((Anolis_carolinensis:0.0579316313,Python_molurus:0.0920232079)100:0.0709358010,Sphenodon_punctatus:0.0282170473)100:0.0077137111,Homo_sapiens19:0.1150008776)100:0.0039735468,(Gallus_gallus:0.0494438746,Crocodylus_porosus:0.0269828346)100:0.0054015554)100:0.0159682335,(((Podocnemis_erythracephala:0.0146835973,Erymnochelys_madagascariensis:0.0171809102)100:0.0078145991,(Pelomedusa_subrufa1:0.0043034619,Pelusios_castaneus:0.0042488646)100:0.0136543942)100:0.0067287874,(Phrynops_sp:0.0040668516,Platemys_platycephala:0.0048520890)100:0.0122123631)100:0.0072763028)100:0.0034781487,(Carettochelys_insculpta:0.0347838118,(Lissemys_punctata:0.0239302188,((Nilssonia_formosa:0.0038157786,Pelodiscus_sinensis:0.0040826823)100:0.0016713830,Apalone_ferox:0.0054769115)100:0.0036655373)100:0.0153899947)100:0.0063925397)100:0.0043493139,(((Dermatemys_sp:0.0112324694,(Staurotypus_triporcatus:0.0076532639,(Sternotherus_minor:0.0019237204,Kinosternon_flavescens:0.0026599027)100:0.0029696066)100:0.0046273655)100:0.0050565996,Chelydra_sp:0.0076226997)100:0.0006872087,((Chelonia_mydas:0.0022365742,Lepidochelys_olivacea:0.0044224190)100:0.0027122629,Dermochelys_coriacea:0.0103285880)100:0.0057897872)100:0.0004626830)100:0.0024218657,(((((Graptemys_pseudogeographica:0.0013913825,Trachemys_scripta:0.0008323839)100:0.0004083419,Chrysemys_picta:0.0013458314)100:0.0003689577,Deirochelys_reticularia:0.0023532507)100:0.0019383908,(Clemmys_marmorata:0.0016487552,Terrapene_ornata:0.0022137391)100:0.0008902630)100:0.0017887098,Platysternon_megacephalum:0.0038630192)100:0.0003354868)100:0.0034447831,((Cyclemys_dentata:0.0037484835,Geoemyda_spengleri:0.0038216702)100:0.0003566650,Rhinoclemmys_punctularia:0.0076029786)100:0.0012876364)100:0.0029123685,(Testudo_horsfieldii:0.0054920619,Geochelone_pardalis:0.0074963003)100:0.0020073743);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/kg22/myProject/results/iqtree_muscle/muscle_tree.treefile -m "GTR{0.983196,3.04667,0.646383,1.25567,2.87918}+F{0.313514,0.190312,0.180712,0.315463}+G4{0.328207}" --length 151681
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/kg22/myProject/data/muscle_concatenated.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/kg22/myProject/data/muscle_concatenated.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed May  6 01:01:43 2026
+Total CPU time used: 920.631989 seconds (0h:15m:20s)
+Total wall-clock time used: 925.7555206 seconds (0h:15m:25s)
+

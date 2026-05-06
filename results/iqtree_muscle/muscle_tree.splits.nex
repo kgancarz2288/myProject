@@ -1,0 +1,129 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=38;
+TAXLABELS
+[1] 'Gopherus_berlandieri'
+[2] 'Anolis_carolinensis'
+[3] 'Carettochelys_insculpta'
+[4] 'Python_molurus'
+[5] 'Podocnemis_erythracephala'
+[6] 'Lissemys_punctata'
+[7] 'Gallus_gallus'
+[8] 'Sphenodon_punctatus'
+[9] 'Dermatemys_sp'
+[10] 'Homo_sapiens19'
+[11] 'Chelonia_mydas'
+[12] 'Dermochelys_coriacea'
+[13] 'Lepidochelys_olivacea'
+[14] 'Erymnochelys_madagascariensis'
+[15] 'Pelomedusa_subrufa1'
+[16] 'Pelusios_castaneus'
+[17] 'Nilssonia_formosa'
+[18] 'Pelodiscus_sinensis'
+[19] 'Apalone_ferox'
+[20] 'Phrynops_sp'
+[21] 'Testudo_horsfieldii'
+[22] 'Graptemys_pseudogeographica'
+[23] 'Geochelone_pardalis'
+[24] 'Clemmys_marmorata'
+[25] 'Chrysemys_picta'
+[26] 'Trachemys_scripta'
+[27] 'Staurotypus_triporcatus'
+[28] 'Sternotherus_minor'
+[29] 'Kinosternon_flavescens'
+[30] 'Deirochelys_reticularia'
+[31] 'Chelydra_sp'
+[32] 'Platemys_platycephala'
+[33] 'Platysternon_megacephalum'
+[34] 'Cyclemys_dentata'
+[35] 'Terrapene_ornata'
+[36] 'Crocodylus_porosus'
+[37] 'Geoemyda_spengleri'
+[38] 'Rhinoclemmys_punctularia'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=38 nsplits=76;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 4,
+	100	 2 4,
+	100	 8,
+	100	 2 4 8,
+	100	 10,
+	100	 2 4 8 10,
+	100	 7,
+	100	 36,
+	100	 7 36,
+	100	 2 4 7 8 10 36,
+	100	 5,
+	100	 14,
+	100	 5 14,
+	100	 15,
+	100	 16,
+	100	 15 16,
+	100	 5 14 15 16,
+	100	 20,
+	100	 32,
+	100	 20 32,
+	100	 5 14 15 16 20 32,
+	100	 2 4 5 7 8 10 14 15 16 20 32 36,
+	100	 3,
+	100	 6,
+	100	 17,
+	100	 18,
+	100	 17 18,
+	100	 19,
+	100	 17 18 19,
+	100	 6 17 18 19,
+	100	 3 6 17 18 19,
+	100	 2 3 4 5 6 7 8 10 14 15 16 17 18 19 20 32 36,
+	100	 9,
+	100	 27,
+	100	 28,
+	100	 29,
+	100	 28 29,
+	100	 27 28 29,
+	100	 9 27 28 29,
+	100	 31,
+	100	 9 27 28 29 31,
+	100	 11,
+	100	 13,
+	100	 11 13,
+	100	 12,
+	100	 11 12 13,
+	100	 9 11 12 13 27 28 29 31,
+	100	 1 21 22 23 24 25 26 30 33 34 35 37 38,
+	100	 22,
+	100	 26,
+	100	 22 26,
+	100	 25,
+	100	 22 25 26,
+	100	 30,
+	100	 22 25 26 30,
+	100	 24,
+	100	 35,
+	100	 24 35,
+	100	 22 24 25 26 30 35,
+	100	 33,
+	100	 22 24 25 26 30 33 35,
+	100	 1 21 23 34 37 38,
+	100	 34,
+	100	 37,
+	100	 34 37,
+	100	 38,
+	100	 34 37 38,
+	100	 1 21 23,
+	100	 21,
+	100	 23,
+	100	 21 23,
+	100	 1,
+	1	 37 38,
+	0	 1 21 22 23 24 25 26 30 34 35 37 38,
+	0	 1 21 23 33 34 37 38,
+;
+END; [Splits]
+

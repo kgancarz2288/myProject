@@ -1,0 +1,128 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=38;
+TAXLABELS
+[1] 'Anolis_carolinensis'
+[2] 'Apalone_ferox'
+[3] 'Carettochelys_insculpta'
+[4] 'Chelonia_mydas'
+[5] 'Chelydra_sp'
+[6] 'Chrysemys_picta'
+[7] 'Clemmys_marmorata'
+[8] 'Crocodylus_porosus'
+[9] 'Cyclemys_dentata'
+[10] 'Deirochelys_reticularia'
+[11] 'Dermatemys_sp'
+[12] 'Dermochelys_coriacea'
+[13] 'Erymnochelys_madagascariensis'
+[14] 'Gallus_gallus'
+[15] 'Geochelone_pardalis'
+[16] 'Geoemyda_spengleri'
+[17] 'Gopherus_berlandieri'
+[18] 'Graptemys_pseudogeographica'
+[19] 'Homo_sapiens19'
+[20] 'Kinosternon_flavescens'
+[21] 'Lepidochelys_olivacea'
+[22] 'Lissemys_punctata'
+[23] 'Nilssonia_formosa'
+[24] 'Pelodiscus_sinensis'
+[25] 'Pelomedusa_subrufa1'
+[26] 'Pelusios_castaneus'
+[27] 'Phrynops_sp'
+[28] 'Platemys_platycephala'
+[29] 'Platysternon_megacephalum'
+[30] 'Podocnemis_erythracephala'
+[31] 'Python_molurus'
+[32] 'Rhinoclemmys_punctularia'
+[33] 'Sphenodon_punctatus'
+[34] 'Staurotypus_triporcatus'
+[35] 'Sternotherus_minor'
+[36] 'Terrapene_ornata'
+[37] 'Testudo_horsfieldii'
+[38] 'Trachemys_scripta'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=38 nsplits=75;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 23,
+	100	 24,
+	100	 23 24,
+	100	 2 23 24,
+	100	 22,
+	100	 2 22 23 24,
+	100	 3,
+	100	 2 3 22 23 24,
+	100	 4,
+	100	 21,
+	100	 4 21,
+	100	 12,
+	100	 4 12 21,
+	100	 5,
+	100	 11,
+	100	 20,
+	100	 35,
+	100	 20 35,
+	100	 34,
+	100	 20 34 35,
+	100	 11 20 34 35,
+	100	 5 11 20 34 35,
+	100	 4 5 11 12 20 21 34 35,
+	100	 6,
+	100	 18,
+	100	 38,
+	100	 18 38,
+	100	 6 18 38,
+	100	 10,
+	100	 6 10 18 38,
+	100	 7,
+	100	 36,
+	100	 7 36,
+	100	 6 7 10 18 36 38,
+	100	 29,
+	100	 6 7 10 18 29 36 38,
+	100	 9,
+	100	 16,
+	99	 9 16,
+	100	 32,
+	100	 9 16 32,
+	100	 15,
+	100	 37,
+	100	 15 37,
+	100	 17,
+	100	 15 17 37,
+	100	 9 15 16 17 32 37,
+	100	 6 7 9 10 15 16 17 18 29 32 36 37 38,
+	100	 1 2 3 8 13 14 19 22 23 24 25 26 27 28 30 31 33,
+	100	 1 8 13 14 19 25 26 27 28 30 31 33,
+	100	 13,
+	100	 30,
+	100	 13 30,
+	100	 25,
+	100	 26,
+	100	 25 26,
+	100	 13 25 26 30,
+	100	 27,
+	100	 28,
+	100	 27 28,
+	100	 13 25 26 27 28 30,
+	100	 1 8 14 19 31 33,
+	100	 8,
+	100	 14,
+	100	 8 14,
+	100	 1 19 31 33,
+	100	 19,
+	100	 1 31 33,
+	100	 33,
+	100	 1 31,
+	100	 31,
+	100	 1,
+	1	 16 32,
+	0	 9 32,
+;
+END; [Splits]
+

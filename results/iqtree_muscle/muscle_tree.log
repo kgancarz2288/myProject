@@ -1,0 +1,158 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Tortuga (AVX2, FMA3, 7 GB RAM)
+Command: iqtree -s /home/kg22/myProject/data/muscle_concatenated.fasta -m GTR+G -B 1000 --prefix /home/kg22/myProject/results/iqtree_muscle/muscle_tree
+Seed:    250135 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  6 00:46:17 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/kg22/myProject/data/muscle_concatenated.fasta ... Fasta format detected
+Reading fasta file: done in 0.0497145 secs using 74.33% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.091178 secs using 49.62% CPU
+Alignment has 38 sequences with 151681 columns, 46633 distinct patterns
+20970 parsimony-informative, 24038 singleton sites, 106672 constant sites
+                               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.013926 secs using 98.94% CPU
+   1  Gopherus_berlandieri            29.69%    passed     19.26%
+   2  Anolis_carolinensis             36.82%    failed      0.00%
+   3  Carettochelys_insculpta         12.16%    passed     93.87%
+   4  Python_molurus                  19.79%    failed      0.00%
+   5  Podocnemis_erythracephala       13.53%    passed     64.12%
+   6  Lissemys_punctata               12.37%    passed     68.88%
+   7  Gallus_gallus                   42.49%    passed     21.41%
+   8  Sphenodon_punctatus             58.70%    failed      0.02%
+   9  Dermatemys_sp                   23.54%    passed     80.04%
+  10  Homo_sapiens19                  17.44%    failed      0.00%
+  11  Chelonia_mydas                   9.71%    passed     94.76%
+  12  Dermochelys_coriacea            11.11%    passed     23.07%
+  13  Lepidochelys_olivacea           10.85%    passed     92.85%
+  14  Erymnochelys_madagascariensis   13.09%    passed     82.57%
+  15  Pelomedusa_subrufa1             11.47%    passed     64.62%
+  16  Pelusios_castaneus              13.55%    passed     77.09%
+  17  Nilssonia_formosa               11.07%    passed     93.69%
+  18  Pelodiscus_sinensis             10.27%    passed     88.01%
+  19  Apalone_ferox                   11.29%    passed     95.72%
+  20  Phrynops_sp                     11.35%    passed     77.26%
+  21  Testudo_horsfieldii             11.74%    passed     37.81%
+  22  Graptemys_pseudogeographica     11.90%    passed     56.61%
+  23  Geochelone_pardalis             13.82%    passed     47.33%
+  24  Clemmys_marmorata               12.36%    passed     55.24%
+  25  Chrysemys_picta                 10.45%    passed     63.56%
+  26  Trachemys_scripta               14.79%    passed     92.58%
+  27  Staurotypus_triporcatus         11.61%    passed     87.18%
+  28  Sternotherus_minor              12.11%    passed     89.80%
+  29  Kinosternon_flavescens          10.64%    passed     88.78%
+  30  Deirochelys_reticularia         14.18%    passed     86.86%
+  31  Chelydra_sp                     14.02%    passed     99.57%
+  32  Platemys_platycephala           13.25%    passed     73.01%
+  33  Platysternon_megacephalum       12.40%    passed     88.47%
+  34  Cyclemys_dentata                16.84%    passed     85.42%
+  35  Terrapene_ornata                12.23%    passed     83.58%
+  36  Crocodylus_porosus              38.45%    passed     36.37%
+  37  Geoemyda_spengleri              14.18%    passed     98.44%
+  38  Rhinoclemmys_punctularia        30.81%    passed     63.38%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                           17.27%  4 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: minimal branch length is reduced to 0.000000659278 for long alignment
+Checking for duplicate sequences: done in 0.0136501 secs using 97.44% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.056 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 250135)...
+
+NOTE: 407 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -658637.333
+2. Current log-likelihood: -635134.081
+3. Current log-likelihood: -634826.921
+4. Current log-likelihood: -634826.348
+Optimal log-likelihood: -634826.342
+Rate parameters:  A-C: 0.98243  A-G: 3.04612  A-T: 0.64615  C-G: 1.25589  C-T: 2.87941  G-T: 1.00000
+Base frequencies:  A: 0.314  C: 0.190  G: 0.181  T: 0.315
+Gamma shape alpha: 0.327
+Parameters optimization took 4 rounds (11.649 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0606014 secs using 99.98% CPU
+Computing ML distances took 0.078079 sec (of wall-clock time) 0.078074 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 4.5459e-05 secs using 98.99% CPU
+Constructing RapidNJ tree: done in 0.000153565 secs using 99.63% CPU
+Computing RapidNJ tree took 0.000319 sec (of wall-clock time) 0.000319 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -635236.019
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 9.725 second
+Computing log-likelihood of 98 initial trees ... 49.174 seconds
+Current best score: -634826.342
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -634744.048
+Iteration 10 / LogL: -634746.892 / Time: 0h:2m:36s
+Iteration 20 / LogL: -634744.083 / Time: 0h:4m:8s
+Finish initializing candidate tree set (1)
+Current best tree score: -634744.048 / CPU time: 232.361
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -634744.139 / Time: 0h:5m:27s (0h:13m:20s left)
+Iteration 40 / LogL: -634744.213 / Time: 0h:6m:52s (0h:10m:45s left)
+Iteration 50 / LogL: -634751.730 / Time: 0h:8m:31s (0h:8m:51s left)
+Log-likelihood cutoff on original alignment: -634800.016
+Iteration 60 / LogL: -634776.634 / Time: 0h:9m:58s (0h:6m:55s left)
+Iteration 70 / LogL: -634754.784 / Time: 0h:11m:19s (0h:5m:5s left)
+Iteration 80 / LogL: -634744.450 / Time: 0h:12m:35s (0h:3m:20s left)
+Iteration 90 / LogL: -634744.615 / Time: 0h:13m:56s (0h:1m:43s left)
+Iteration 100 / LogL: -634756.087 / Time: 0h:15m:7s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -634800.024
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:15m:20s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -634744.048
+Optimal log-likelihood: -634744.047
+Rate parameters:  A-C: 0.98320  A-G: 3.04667  A-T: 0.64638  C-G: 1.25567  C-T: 2.87918  G-T: 1.00000
+Base frequencies:  A: 0.314  C: 0.190  G: 0.181  T: 0.315
+Gamma shape alpha: 0.328
+Parameters optimization took 1 rounds (1.903 sec)
+BEST SCORE FOUND : -634744.047
+Creating bootstrap support values...
+Split supports printed to NEXUS file /home/kg22/myProject/results/iqtree_muscle/muscle_tree.splits.nex
+Total tree length: 0.815
+
+Total number of iterations: 102
+CPU time used for tree search: 902.766 sec (0h:15m:2s)
+Wall-clock time used for tree search: 904.496 sec (0h:15m:4s)
+Total CPU time used: 920.632 sec (0h:15m:20s)
+Total wall-clock time used: 922.581 sec (0h:15m:22s)
+
+Computing bootstrap consensus tree...
+Reading input file /home/kg22/myProject/results/iqtree_muscle/muscle_tree.splits.nex...
+38 taxa and 76 splits.
+Consensus tree written to /home/kg22/myProject/results/iqtree_muscle/muscle_tree.contree
+Reading input trees file /home/kg22/myProject/results/iqtree_muscle/muscle_tree.contree
+Log-likelihood of consensus tree: -634744.047
+
+Analysis results written to: 
+  IQ-TREE report:                /home/kg22/myProject/results/iqtree_muscle/muscle_tree.iqtree
+  Maximum-likelihood tree:       /home/kg22/myProject/results/iqtree_muscle/muscle_tree.treefile
+  Likelihood distances:          /home/kg22/myProject/results/iqtree_muscle/muscle_tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /home/kg22/myProject/results/iqtree_muscle/muscle_tree.splits.nex
+  Consensus tree:                /home/kg22/myProject/results/iqtree_muscle/muscle_tree.contree
+  Screen log file:               /home/kg22/myProject/results/iqtree_muscle/muscle_tree.log
+
+Date and Time: Wed May  6 01:01:43 2026

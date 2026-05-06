@@ -1,0 +1,158 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Tortuga (AVX2, FMA3, 7 GB RAM)
+Command: iqtree -s /home/kg22/myProject/data/mafft_concatenated.fasta -m GTR+G -B 1000 --prefix /home/kg22/myProject/results/iqtree_mafft/mafft_tree
+Seed:    791095 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  6 00:17:41 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/kg22/myProject/data/mafft_concatenated.fasta ... Fasta format detected
+Reading fasta file: done in 0.0491922 secs using 91.41% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.123329 secs using 48.16% CPU
+Alignment has 38 sequences with 149072 columns, 46861 distinct patterns
+21328 parsimony-informative, 24626 singleton sites, 103118 constant sites
+                               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0126891 secs using 98.69% CPU
+   1  Anolis_carolinensis             35.71%    failed      0.00%
+   2  Apalone_ferox                    9.74%    passed     95.72%
+   3  Carettochelys_insculpta         10.62%    passed     93.87%
+   4  Chelonia_mydas                   8.13%    passed     94.77%
+   5  Chelydra_sp                     12.51%    passed     99.57%
+   6  Chrysemys_picta                  8.88%    passed     63.56%
+   7  Clemmys_marmorata               10.83%    passed     55.24%
+   8  Crocodylus_porosus              37.37%    passed     36.37%
+   9  Cyclemys_dentata                15.39%    passed     85.42%
+  10  Deirochelys_reticularia         12.68%    passed     86.86%
+  11  Dermatemys_sp                   22.21%    passed     80.04%
+  12  Dermochelys_coriacea             9.56%    passed     23.07%
+  13  Erymnochelys_madagascariensis   11.57%    passed     82.57%
+  14  Gallus_gallus                   41.49%    passed     21.41%
+  15  Geochelone_pardalis             12.31%    passed     47.34%
+  16  Geoemyda_spengleri              12.67%    passed     98.44%
+  17  Gopherus_berlandieri            28.46%    passed     19.26%
+  18  Graptemys_pseudogeographica     10.36%    passed     56.62%
+  19  Homo_sapiens19                  15.99%    failed      0.00%
+  20  Kinosternon_flavescens           9.08%    passed     88.78%
+  21  Lepidochelys_olivacea            9.29%    passed     92.85%
+  22  Lissemys_punctata               10.84%    passed     68.88%
+  23  Nilssonia_formosa                9.51%    passed     93.69%
+  24  Pelodiscus_sinensis              8.70%    passed     88.01%
+  25  Pelomedusa_subrufa1              9.92%    passed     64.62%
+  26  Pelusios_castaneus              12.03%    passed     77.09%
+  27  Phrynops_sp                      9.80%    passed     77.26%
+  28  Platemys_platycephala           11.73%    passed     73.01%
+  29  Platysternon_megacephalum       10.87%    passed     88.47%
+  30  Podocnemis_erythracephala       12.01%    passed     64.12%
+  31  Python_molurus                  18.39%    failed      0.00%
+  32  Rhinoclemmys_punctularia        29.60%    passed     63.38%
+  33  Sphenodon_punctatus             57.97%    failed      0.02%
+  34  Staurotypus_triporcatus         10.06%    passed     87.18%
+  35  Sternotherus_minor              10.57%    passed     89.80%
+  36  Terrapene_ornata                10.69%    passed     83.58%
+  37  Testudo_horsfieldii             10.20%    passed     37.81%
+  38  Trachemys_scripta               13.30%    passed     92.58%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                           15.82%  4 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: minimal branch length is reduced to 0.000000670817 for long alignment
+Checking for duplicate sequences: done in 0.0131978 secs using 94.26% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.077 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 791095)...
+
+NOTE: 409 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -655429.162
+2. Current log-likelihood: -632764.565
+3. Current log-likelihood: -632394.863
+4. Current log-likelihood: -632393.874
+Optimal log-likelihood: -632393.867
+Rate parameters:  A-C: 0.98118  A-G: 3.28119  A-T: 0.63396  C-G: 1.23672  C-T: 3.11135  G-T: 1.00000
+Base frequencies:  A: 0.314  C: 0.190  G: 0.181  T: 0.315
+Gamma shape alpha: 0.333
+Parameters optimization took 4 rounds (12.715 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0645644 secs using 99.98% CPU
+Computing ML distances took 0.081471 sec (of wall-clock time) 0.081446 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 5.6775e-05 secs using 100.4% CPU
+Constructing RapidNJ tree: done in 0.000150262 secs using 99.83% CPU
+Computing RapidNJ tree took 0.000273 sec (of wall-clock time) 0.000272 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -632799.389
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 9.905 second
+Computing log-likelihood of 98 initial trees ... 44.685 seconds
+Current best score: -632393.867
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -632321.733
+Iteration 10 / LogL: -632322.466 / Time: 0h:2m:20s
+Iteration 20 / LogL: -632324.021 / Time: 0h:3m:30s
+Finish initializing candidate tree set (1)
+Current best tree score: -632321.733 / CPU time: 192.999
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -632336.712 / Time: 0h:4m:21s (0h:10m:40s left)
+Iteration 40 / LogL: -632323.868 / Time: 0h:5m:11s (0h:8m:7s left)
+Iteration 50 / LogL: -632323.909 / Time: 0h:6m:6s (0h:6m:21s left)
+Log-likelihood cutoff on original alignment: -632371.443
+Iteration 60 / LogL: -632324.611 / Time: 0h:7m:1s (0h:4m:52s left)
+Iteration 70 / LogL: -632323.689 / Time: 0h:7m:59s (0h:3m:35s left)
+Iteration 80 / LogL: -632322.023 / Time: 0h:8m:53s (0h:2m:21s left)
+Iteration 90 / LogL: -632322.017 / Time: 0h:9m:54s (0h:1m:13s left)
+Iteration 100 / LogL: -632321.812 / Time: 0h:10m:55s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -632353.234
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:11m:7s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -632321.733
+Optimal log-likelihood: -632321.733
+Rate parameters:  A-C: 0.98158  A-G: 3.28156  A-T: 0.63425  C-G: 1.23633  C-T: 3.11163  G-T: 1.00000
+Base frequencies:  A: 0.314  C: 0.190  G: 0.181  T: 0.315
+Gamma shape alpha: 0.333
+Parameters optimization took 1 rounds (1.356 sec)
+BEST SCORE FOUND : -632321.733
+Creating bootstrap support values...
+Split supports printed to NEXUS file /home/kg22/myProject/results/iqtree_mafft/mafft_tree.splits.nex
+Total tree length: 0.828
+
+Total number of iterations: 102
+CPU time used for tree search: 648.929 sec (0h:10m:48s)
+Wall-clock time used for tree search: 649.823 sec (0h:10m:49s)
+Total CPU time used: 667.639 sec (0h:11m:7s)
+Total wall-clock time used: 668.784 sec (0h:11m:8s)
+
+Computing bootstrap consensus tree...
+Reading input file /home/kg22/myProject/results/iqtree_mafft/mafft_tree.splits.nex...
+38 taxa and 75 splits.
+Consensus tree written to /home/kg22/myProject/results/iqtree_mafft/mafft_tree.contree
+Reading input trees file /home/kg22/myProject/results/iqtree_mafft/mafft_tree.contree
+Log-likelihood of consensus tree: -632321.733
+
+Analysis results written to: 
+  IQ-TREE report:                /home/kg22/myProject/results/iqtree_mafft/mafft_tree.iqtree
+  Maximum-likelihood tree:       /home/kg22/myProject/results/iqtree_mafft/mafft_tree.treefile
+  Likelihood distances:          /home/kg22/myProject/results/iqtree_mafft/mafft_tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /home/kg22/myProject/results/iqtree_mafft/mafft_tree.splits.nex
+  Consensus tree:                /home/kg22/myProject/results/iqtree_mafft/mafft_tree.contree
+  Screen log file:               /home/kg22/myProject/results/iqtree_mafft/mafft_tree.log
+
+Date and Time: Wed May  6 00:28:53 2026

@@ -4,3 +4,6 @@
 ## Wed May  6 00:03:27 CDT 2026
 - Re-aligned 233 UCE loci with MAFFT using --auto flag
 - Re-aligned 233 UCE loci with MUSCLE using -align flag
+## Wed May  6 01:15:21 CDT 2026
+- Ran IQ-TREE on MAFFT concatenated alignment (GTR+G, 1000 bootstraps)
+- Ran IQ-TREE on MUSCLE concatenated alignment (GTR+G, 1000 bootstraps)
