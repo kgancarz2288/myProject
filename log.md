@@ -7,3 +7,4 @@
 ## Wed May  6 01:15:21 CDT 2026
 - Ran IQ-TREE on MAFFT concatenated alignment (GTR+G, 1000 bootstraps)
 - Ran IQ-TREE on MUSCLE concatenated alignment (GTR+G, 1000 bootstraps)
+- Added setup instructions to pipeline.sh
