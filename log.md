@@ -8,3 +8,5 @@
 - Ran IQ-TREE on MAFFT concatenated alignment (GTR+G, 1000 bootstraps)
 - Ran IQ-TREE on MUSCLE concatenated alignment (GTR+G, 1000 bootstraps)
 - Added setup instructions to pipeline.sh
+## Thu May  7 11:29:10 CDT 2026
+- RAxML-NG completed with 500 bootstrap replicates on MAFFT concatenated alignment
