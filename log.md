@@ -10,3 +10,5 @@
 - Added setup instructions to pipeline.sh
 ## Thu May  7 11:29:10 CDT 2026
 - RAxML-NG completed with 500 bootstrap replicates on MAFFT concatenated alignment
+## Thu May  7 12:50:05 CDT 2026
+- Successfully visualized and compared IQ-TREE and RAxML trees using ggtree
