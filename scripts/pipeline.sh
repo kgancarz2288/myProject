@@ -42,3 +42,19 @@ mkdir -p $OUTDIR/muscle
 
 python3 ~/myProject/scripts/nexus_to_fasta.py $DATA $OUTDIR/unaligned
 
+
+# STEP 2: Multiple Sequence Alignment
+
+# Run MAFFT
+# Run MUSCLE
+
+
+#Step 3: Concatenation 
+
+
+#Step 4: Phylogenetic Inference
+
+#IQ-TREE Inference (1000 boostraps)
+#RAxML-NG Inference (500 bootstraps)
+
+
